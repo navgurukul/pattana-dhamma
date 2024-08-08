@@ -1,0 +1,24 @@
+/* styles.css */
+
+.custom-heading {
+    font-family: 'Spectral', sans-serif;
+    font-weight: 700;
+    color: green;
+     
+  }
+  
+  /* Additional container styles */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+  }
+  
+  /* Optional: You can add responsive design adjustments here if needed */
+  @media (max-width: 768px) {
+    .custom-heading {
+      font-size: 1.5rem; /* Adjust font size for smaller screens if needed */
+    }
+  }
+  
