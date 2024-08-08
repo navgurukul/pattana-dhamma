@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+
+/* General styles for the navbar */
+.custom-navbar {
+  background-color: white;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.5rem 0; /* Reduce top and bottom padding */
+}
+
+.navbar-logo {
+  height: 100px; /* Reduce logo height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  width: 30px;
+  height: 24px;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.navbar-toggler-icon::before {
+  top: 0;
+}
+
+.navbar-toggler-icon::after {
+  bottom: 0;
+}
+
+.navbar-toggler-icon div {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-nav .nav-link {
+  color: #4d4d4d !important;
+  margin-right: 1rem;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important; /* Highlight color on hover */
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  padding-left: 10px; /* Reduce padding between nav items */
+  padding-right: 10px;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem; /* Reduce left and right padding */
+}
+
+.navbar-collapse {
+  display: none; /* Hide navbar items by default in mobile view */
+}
+
+.navbar-collapse.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.offcanvas {
+  width: 75%;
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvas-title {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+.offcanvas-body {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+.offcanvas-body .nav-link {
+  color: #4d4d4d !important;
+  margin-bottom: 1rem;
+  text-align: left; /* Ensures the text aligns left */
+}
+
+.offcanvas-body .nav-link:hover {
+  color: #ffc107 !important; /* Highlight color on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Change to column layout in mobile view */
+  }
+
+  .navbar-collapse.show {
+    display: none; /* Ensure collapse is hidden even when shown in mobile view */
+  }
+}

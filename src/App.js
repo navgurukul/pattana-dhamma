@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './header';
 
 function App() {
   return (
-    <div className="App">
-     <h1> Dhamma Pattana Vipassana Centre</h1>
-    </div>
+   <Header />
   );
 }
 
