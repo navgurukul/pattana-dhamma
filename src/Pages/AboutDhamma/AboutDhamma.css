@@ -1,0 +1,18 @@
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+h2,h3,h5,h6 {
+  font-family: 'Spectral', serif;
+}
+
+.lead {
+  font-size: .1rem;
+  line-height: 1.8;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+
