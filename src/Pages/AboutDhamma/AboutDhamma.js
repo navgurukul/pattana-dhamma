@@ -1,14 +1,13 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import './AboutDhamma.css';
 
 const AboutDhamma = () => {
     return (
-        <Container className="my-5">
-            <Row className="justify-content-center">
-                <Col md={10}>
-                    <Card className="p-4 shadow-sm border-0">
-                        <Card.Body>
+        <div className="container lg">
+            <div className="row justify-content-center">
+                <div className="col-md-10">
+                    <div className="card p-4 shadow-sm border-0">
+                        <div className="card-body">
                             <h2 className="text-center mb-4">
                                 About Dhamma Pattana Vipassana Centre
                             </h2>
@@ -16,39 +15,25 @@ const AboutDhamma = () => {
                                 Dhamma Pattana Vipassana Centre (Harbour of Dhamma) is situated atop a lush green hill, overseeing the sea, in a quaint village called Gorai a few kilometers away from Mumbai city and yet untouched by its stress and pollution.
                                 The close proximity of the centre to the main city enables people leading extremely busy lives to reach a Vipassana center in a very short time.
                                 This peaceful haven for Vipassana meditators lies within the majestic Global Pagoda complex.
-                                The Global pagoda stores the precious relics of Buddha, emanating powerful meditative vibrations that would put a wandering mind to rest.
+                                The Global Pagoda stores the precious relics of Buddha, emanating powerful meditative vibrations that would put a wandering mind to rest.
                             </p>
                             <p className="lead">
                                 Dhamma Pattana Centre's meditation hall and rooms being air-conditioned, one is advised to bring appropriate woollens.
-                                The cente is a compact two-story building and one is required to climb two stairs, 3 to 4 times a day.
-                                However there is an elevator available for use of the elderly and needy. Accomodation is usually individual,
-                                however in certain unavoidable circumstances one may have to share a room with another participant.
+                                The centre is a compact two-story building and one is required to climb two stairs, 3 to 4 times a day.
+                                However, there is an elevator available for the elderly and needy. Accommodation is usually individual,
+                                however, in certain unavoidable circumstances one may have to share a room with another participant.
                             </p>
                             <div className="text-center mb-4">
-                            <Button
-                                style={{
-                                color: 'green',
-                                borderColor: 'green',
-                                fontSize: '1.2rem',
-                                padding: '10px 20px',
-                                backgroundColor:'white'
-                                }}
-                                href="https://pattana.dhamma.org/photos.shtml"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onMouseOver={(e) => {
-                                e.target.style.backgroundColor = 'green';
-                                e.target.style.color = 'white';
-                                }}
-                                onMouseOut={(e) => {
-                                e.target.style.backgroundColor = 'white';
-                                e.target.style.color = 'green';
-                                }}
-                            >
-                                See More Photos
-                            </Button>
+                                <a
+                                    href="https://pattana.dhamma.org/photos.shtml"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-outline-success btn-lg"
+                                    style={{ padding: "15px 30px", fontSize: "1.25rem" }}
+                                >
+                                    See More Photos
+                                </a>
                             </div>
-
                             <h3 className="text-center mb-4">Getting to Dhamma Pattana</h3>
                             <div className="mb-3">
                                 <strong className="mb-0">Dhamma Pattana Vipassana Centre</strong>
@@ -103,11 +88,12 @@ const AboutDhamma = () => {
                                     <p>Hotel Residency - +91-22-66670555 residencyhotel@vsnl.com</p>
                                 </li>
                             </ul>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-        </Container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
+
 export default AboutDhamma;
