@@ -5,8 +5,8 @@ import './App.css';
 import Header from './Pages/Header/header';
 
 import Home from './Pages/home';
-import PhotoGallery from './Pages/PhotoGallery/photogallery';
-
+import AboutDhamma from './Pages/AboutDhamma/AboutDhamma';
+import PhotoGallery from './Pages/PhotoGallery/PhotoGallery';
 function App() {
   return (
     <Router>
@@ -15,6 +15,8 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/photo-gallery" element={<PhotoGallery />} />
         {/* Add more routes here as needed */}
+        <Route path="/aboutDhamma" element={<AboutDhamma/>} />
+        <Route path="/photoGallery" element={<PhotoGallery/>} />
       </Routes>
     </Router>
   );
