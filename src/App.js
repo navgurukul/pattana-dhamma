@@ -13,6 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/photo-gallery" element={<PhotoGallery />} />
         {/* Add more routes here as needed */}
         <Route path="/aboutDhamma" element={<AboutDhamma/>} />
         <Route path="/photoGallery" element={<PhotoGallery/>} />
