@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+
+
 h2,
 h3,
 h5,
@@ -23,11 +25,12 @@ h6 {
 .lead {
   margin-top: 20px;
   font-family: Karla, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.5em;
   color: #4d4d4d;
-  background-color: aqua;
+  ;
+  /* background-color: aqua; */
 }
 
 .custom-link {
