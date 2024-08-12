@@ -31,7 +31,7 @@ const Header = () => {
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link
                 href="https://www.dhamma.org/en/schedules/schpattana"
                 target="_blank"
@@ -69,11 +69,11 @@ const Header = () => {
 
       <Offcanvas show={showOffcanvas} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title style={{ color: 'rgb(0, 102, 0)' }}>Dhamma Pattana Vipassana Centre</Offcanvas.Title>
+          <Offcanvas.Title>Dhamma Pattana Vipassana Centre</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
-            <Nav.Link href="/" onClick={handleClose}>
+            <Nav.Link href="#home" onClick={handleClose}>
               Home
             </Nav.Link>
             <Nav.Link
@@ -103,7 +103,7 @@ const Header = () => {
             >
               FAQ's
             </Nav.Link>
-            <Nav.Link href="/photo-gallery" onClick={handleClose}>
+            <Nav.Link href="#contacts" onClick={handleClose}>
               Photo Gallery
             </Nav.Link>
           </Nav>
