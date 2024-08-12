@@ -1,18 +1,40 @@
-body {
-  font-family: 'Karla', sans-serif;
-}
-
-h2,h3,h5,h6 {
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+h2,
+h3,
+h5,
+h6 {
   font-family: 'Spectral', serif;
 }
 
+.custom-heading {
+  color: #060;
+  font-size: 42px;
+  font-weight: 700;
+  
+}
+.heading {
+  color: #4d4d4d;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 54.6px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
 .lead {
-  font-size: .1rem;
-  line-height: 1.8;
+  margin-top: 20px;
+  font-family: Karla, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #4d4d4d;
+  background-color: aqua;
 }
 
-.text-primary {
-  color: #007bff;
+.custom-link {
+  text-decoration: none;
+  color: green;
 }
 
-
+.custom-link:hover {
+  text-decoration: underline;
+}
