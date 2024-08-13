@@ -5,6 +5,7 @@ import './App.css';
 import Header from './Pages/Header/header';
 
 import Home from './Pages/home';
+import PhotoGallery from './Pages/PhotoGallery/photogallery';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/photo-gallery" element={<PhotoGallery />} />
         {/* Add more routes here as needed */}
       </Routes>
     </Router>
