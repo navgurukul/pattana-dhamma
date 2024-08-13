@@ -4,12 +4,6 @@
     font-size: 42px;
     color: rgb(0, 102, 0);
 }
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 1200px !important;
-}
-
 .Heading2 {
     font-family: 'Spectral', serif;
     font-size: 30px;
