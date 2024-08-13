@@ -28,7 +28,7 @@ function Footer() {
                             <a href="https://pajjota.dhamma.org/fileadmin/dhamma/europe/centers/dhammapajjota/executive/EECC-PressArticlev1-2008v2.pdf" className="footer-link  mx-2 my-2" style={{ minWidth: '200px' }}>
                                 Press Release about International Executive Course 2008
                             </a>
-                            <a href="https://pattana.dhamma.org/directions.shtml" className="footer-link mx-2 my-2" style={{ minWidth: '200px' }}>
+                            <a href="/" className="footer-link mx-2 my-2" style={{ minWidth: '200px' }}>
                                 How to Get to Dhamma Pattana Center
                             </a>
                         </div>
