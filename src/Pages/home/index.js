@@ -15,6 +15,7 @@ const Home = () => {
               <a
                 href="https://www.dhamma.org/en/about/goenka"
                 className="link1"
+                 target="_blank"
               >
                 S.N. Goenka
               </a>{" "}
