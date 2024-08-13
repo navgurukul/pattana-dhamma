@@ -4,6 +4,7 @@ import img from "./Mr S.N. Goenka.jpg"
 import Footer from '../Footer/footer';
 
 const Home = () => {
+    
     return (
         <>
         <div className="container" >
