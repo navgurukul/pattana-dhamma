@@ -45,7 +45,7 @@ const Header = () => {
               >
                 Code of Discipline
               </Nav.Link>
-              <Nav.Link href="#portfolio">About Dhamma Pattana</Nav.Link>
+              <Nav.Link href="/aboutDhamma">About Dhamma Pattana</Nav.Link>
               <Nav.Link
                 href="https://www.dhamma.org/en/about/qanda"
                 target="_blank"
@@ -91,7 +91,7 @@ const Header = () => {
             >
               Code of Discipline
             </Nav.Link>
-            <Nav.Link href="#portfolio" onClick={handleClose}>
+            <Nav.Link href="/aboutDhamma" onClick={handleClose}>
               About Dhamma Pattana
             </Nav.Link>
             <Nav.Link

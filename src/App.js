@@ -7,7 +7,7 @@ import DemoName from './Pages/dummy';
 
 import Home from './Pages/home';
 import PhotoGallery from './Pages/PhotoGallery/photogallery';
-
+import AboutDhamma from './Pages/AboutDhamma/AboutDhamma';
 function App() {
   return (
     <Router>
@@ -17,6 +17,7 @@ function App() {
         <Route path="/photo-gallery" element={<PhotoGallery />} />
         {/* Add more routes here as needed */}
       <Route path="/demo" element={<DemoName />} />
+      <Route path="/aboutDhamma" element={<AboutDhamma/>} />
       </Routes>
     </Router>
   );
