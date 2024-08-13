@@ -3,7 +3,7 @@ import './AboutDhamma.css';
 
 const AboutDhamma = () => {
     return (
-        <div className="container">
+        <div className="container" style={{ maxWidth: "1200px" }}>
             <div className="row justify-content-center">
                 <div className="col-12 col-lg-10 col-xl-12 text-center mt-4">
                     <h3 className="heading1">About Dhamma Pattana Vipassana Centre</h3>
