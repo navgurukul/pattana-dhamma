@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
 
-/* General styles for the navbar */
+
 .custom-navbar {
   background-color: white;
   font-family: 'Karla', sans-serif;
   font-size: 18px;
   font-weight: 600;
-  padding: 0.5rem 0; /* Reduce top and bottom padding */
+  padding: 0.5rem 0; 
 }
 
 .navbar-logo {
-  height: 100px; /* Reduce logo height */
-  width: auto; /* Maintain aspect ratio */
+  height: 100px; 
+  width: auto; 
 }
 
 .navbar-toggler {
@@ -32,7 +32,7 @@
   display: block;
   width: 100%;
   height: 4px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
 }
 
@@ -51,14 +51,15 @@
 
 .navbar-nav .nav-link {
   color: #4d4d4d !important;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   font-family: 'Karla', sans-serif;
   font-size: 18px;
   font-weight: 600;
+  white-space: nowrap; 
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffc107 !important; /* Highlight color on hover */
+  color: #ffc107 !important; 
 }
 
 .navbar-nav {
@@ -66,28 +67,19 @@
 }
 
 .nav-item {
-  padding-left: 10px; /* Reduce padding between nav items */
-  padding-right: 10px;
-}
-
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.ml-auto {
-  margin-left: auto !important;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem; /* Reduce left and right padding */
+  padding: 0 0.5rem; 
 }
 
 .navbar-collapse {
-  display: none; /* Hide navbar items by default in mobile view */
+  display: none; 
 }
 
 .navbar-collapse.show {
@@ -123,20 +115,21 @@
 
 .offcanvas-body .nav-link {
   color: #4d4d4d !important;
-  margin-bottom: 1rem;
-  text-align: left; /* Ensures the text aligns left */
+  margin-bottom: 0.5rem; 
+  text-align: left; 
+  white-space: nowrap; 
 }
 
 .offcanvas-body .nav-link:hover {
-  color: #ffc107 !important; /* Highlight color on hover */
+  color: #ffc107 !important; 
 }
 
 @media (max-width: 768px) {
   .navbar-nav {
-    flex-direction: column; /* Change to column layout in mobile view */
+    flex-direction: column; 
   }
 
   .navbar-collapse.show {
-    display: none; /* Ensure collapse is hidden even when shown in mobile view */
+    display: none; 
   }
 }

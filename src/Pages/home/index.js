@@ -6,7 +6,7 @@ import Footer from "../Footer/footer";
 const Home = () => {
   return (
     <>
-      <div className="container" style={{ maxWidth: "1200px" }}>
+      <div className="container" >
         <div className="row justify-content-center">
           <div className="col-12 col-lg-10 col-xl-12 text-center mt-4">
             <h3 className="custom-heading">Dhamma Pattana Vipassana Centre</h3>
