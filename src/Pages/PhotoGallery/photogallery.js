@@ -43,8 +43,8 @@ const ImageGallery = () => {
     return (
         <div className="container" style={{ maxWidth: "1200px" }}>
             <div className="row justify-content-center">
-                <h3 className="custom-heading text-center mt-4 mb-5">Photo Gallery</h3>
-                <h4 className="feedback-section text-center" onClick={handleFeedbackClick}>
+                <h3 className="custom-heading text-center mt-4 ">Photo Gallery</h3>
+                <h4 className="feedback-section text-center mb-5" onClick={handleFeedbackClick}>
                     Feedback from past participants
                 </h4>
                 {images.map((image, index) => (
