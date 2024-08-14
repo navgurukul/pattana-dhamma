@@ -45,7 +45,7 @@ function Footer() {
                             <h5 className='mt-3 footer-heading mb-3'>Contact Details</h5>
                             <p className="footer-text">
                             Tel: [91] (22) 50427501 (Mon-Sat, 10:00 AM – 5:00 PM only)<br />
-                            Email: info@pattana.dhamma.org
+                            Email: webmaster@dhamma.org
                             </p>
                         </div>
                     </div>
