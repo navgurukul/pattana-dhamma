@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import img1 from "./assets/img1.jpg";
 import img2 from "./assets/img2.jpg";
 import img3 from "./assets/img3.jpg";
@@ -14,7 +15,7 @@ import "./photogallery.css";
 
 const ImageGallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
-
+    const navigate = useNavigate(); // Initialize useNavigate
     const images = [
         { src: img1, alt: 'Image 1', text: 'Garden and pathways for walking' },
         { src: img2, alt: 'Image 2', text: 'DPVC main building' },
@@ -36,11 +37,16 @@ const ImageGallery = () => {
     const handleClose = () => {
         setSelectedImage(null);
     };
-
+    const handleFeedbackClick = () => {
+        navigate('/feedbackPage');
+    };
     return (
         <div className="container" style={{ maxWidth: "1200px" }}>
             <div className="row justify-content-center">
                 <h3 className="custom-heading text-center mt-4 mb-5">Photo Gallery</h3>
+                <h4 className="feedback-section text-center" onClick={handleFeedbackClick}>
+                    Feedback from past participants
+                </h4>
                 {images.map((image, index) => (
                     <div
                         className={`${index === images.length - 1 ? 'col-12' : 'col-md-5 mx-2'
