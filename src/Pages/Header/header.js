@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
 import "./header.css";
 
+
 const Header = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
 
@@ -45,7 +46,7 @@ const Header = () => {
               >
                 Code of Discipline
               </Nav.Link>
-              <Nav.Link href="#portfolio">About Dhamma Pattana</Nav.Link>
+              <Nav.Link href="/aboutDhamma">About Dhamma Pattana</Nav.Link>
               <Nav.Link
                 href="https://www.dhamma.org/en/about/qanda"
                 target="_blank"
@@ -53,7 +54,7 @@ const Header = () => {
               >
                 FAQ's
               </Nav.Link>
-              <Nav.Link href="#contacts">Photo Gallery</Nav.Link>
+              <Nav.Link href="./photoGallery">Photo Gallery</Nav.Link>
             </Nav>
             <Navbar.Brand href="#">
               <img
@@ -91,7 +92,7 @@ const Header = () => {
             >
               Code of Discipline
             </Nav.Link>
-            <Nav.Link href="#portfolio" onClick={handleClose}>
+            <Nav.Link href="#aboutDhamma" onClick={handleClose}>
               About Dhamma Pattana
             </Nav.Link>
             <Nav.Link
